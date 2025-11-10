@@ -1,0 +1,48 @@
+{
+  "$schema": "https://www.schemastore.org/prettierrc.json",
+  "printWidth": 120,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "proseWrap": "preserve",
+  "htmlWhitespaceSensitivity": "strict",
+  "embeddedLanguageFormatting": "auto",
+  "checkIgnorePragma": false,
+  "experimentalOperatorPosition": "start",
+  "experimentalTernaries": false,
+  "insertPragma": false,
+  "objectWrap": "preserve",
+  "requirePragma": false,
+  "singleAttributePerLine": false,
+  "vueIndentScriptAndStyle": false,
+  "plugins": [],
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "options": {
+        "trailingComma": "none"
+      }
+    },
+    {
+      "files": ["*.jsonc", "tsconfig*.json", "jsconfig*.json", ".vscode/*.json"],
+      "options": {
+        "trailingComma": "all",
+        "parser": "jsonc"
+      }
+    },
+    {
+      "files": ["*.md", "*.markdown", "*.mdown", "*.mkd", "*.mkdn", "*.mdwn", "*.mdtxt", "*.mdtext"],
+      "options": {
+        "printWidth": 80
+      }
+    }
+  ]
+}
